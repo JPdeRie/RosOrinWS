@@ -20,7 +20,7 @@ export ASR_LANGUAGE=English
 export MIC_TYPE=WonderEchoPro
 
 # 离线大模型语音 offline/online(default)
-export ASR_MODE=offline
+export ASR_MODE=online
 
 export SSID_PREFIX=HW
 
@@ -38,7 +38,8 @@ export need_compile=False
 #export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 export ROS_DOMAIN_ID=0
 #export ROS_DOMAIN_ID=42 # Numbers from 0 to 232
-#export ROS_LOCALHOST_ONLY=1
+export ROS_LOCALHOST_ONLY=0
+export RMW_IMPLEMENTATION=rmw_fastrtps_cpp
 export CYCLONEDDS_URI=file:///etc/cyclonedds/config.xml
 
 echo -e "\033[32m----------------------------------------------
